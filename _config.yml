@@ -1,15 +1,15 @@
 title: Debsoc Blog
-email: your-email@example.com
+email: mvitdebsoc@gmail.com
 description: A Blog website for Sir MVIT DEBSOC
-author: Start Bootstrap
+author: MvitDebsoc
 baseurl: "/DebsocBlog"
 url: "https://mvitdebsoc.github.io"
 
 # Social Profiles
-twitter_username: SBootstrap
-github_username: StartBootstrap
-facebook_username: StartBootstrap
-instagram_username:
+twitter_username:
+github_username: MvitDebsoc
+facebook_username: Sir-MVIT-Parliamentary-Debate-103824854360151/
+instagram_username: smvitdebsoc
 linkedin_username:
 
 # Add your google-analytics ID here to activate google analytics
