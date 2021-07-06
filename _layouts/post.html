@@ -22,7 +22,7 @@ layout: default
             {% endif %}
             <span class="meta"
               >Posted by
-              <a href="#"
+              <a href="{{ "/authors" | relative_url }}"
                 >{% if page.author %}{{ page.author }}{% else %}{{ site.author
                 }}{% endif %}</a
               >
