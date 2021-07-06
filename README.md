@@ -19,4 +19,4 @@ The Soc focuses on **Parliamentary Debating** style : Asian Parliament and Briti
 
 * * * 
  <a href="https://www.instagram.com/smvitdebsoc/">![alt text](https://img.shields.io/badge/-Instagram-833AB4?style=plastic&logo=Instagram)</a>  
- Check out our Instagram handle for informative posts, quizzes, announcements and a lot more! 
+ Check out our Instagram handle for informative posts, quizzes, fun interactions, announcements and a lot more! 
