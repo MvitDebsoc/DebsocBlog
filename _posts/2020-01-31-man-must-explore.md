@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "The dreams of yesterday are the hopes of today and the reality of tomorrow."
-date: 2020-01-27 23:45:13 -0400
-background: "/img/posts/02.jpg"
+title: "Man must explore, and this is exploration at its greatest"
+subtitle: "Problems look mighty small from 150 miles up"
+date: 2020-01-31 10:45:13 -0400
+background: "/assets/images/posts/06.jpg"
 comments: true
-author: author5
+author: author1
 ---
 
 <p>
@@ -85,9 +86,9 @@ author: author5
   alt="Demo Image"
 />
 <span class="caption text-muted"
-  >To go places and do things that have never been done before – that’s what
-  living is all about.</span
->
+
+> To go places and do things that have never been done before – that’s what
+> living is all about.</span
 
 <p>
   Space, the final frontier. These are the voyages of the Starship Enterprise.
