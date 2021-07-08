@@ -1,4 +1,9 @@
-# <div align="center"> <img src="img/Debsoc_logo.jpg" alt="logo" width="50"/>  Official Website of  SMVIT DEBSOC </div>
+<h1 align="center">
+  <img align="centre" src="/assets/images/Debsoc_logo.jpg" alt="logo" width="150"/>
+</h1>
+<h1 align="center">
+    Official Website of SMVIT DEBSOC
+</h1>
   
 ### **DEBSOC** is the official Debating Society of **Sir M. Visvesvaraya Institute of Technology , Bangalore**.
 The Soc focuses on **Parliamentary Debating** style : Asian Parliament and British Parliament.
