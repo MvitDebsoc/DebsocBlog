@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Science has not yet mastered prophecy"
-subtitle: "We predict too much for the next year and yet far too little for the next ten."
-date: 2020-01-29 23:45:13 -0400
-background: "/img/posts/04.jpg"
+title: "I believe every human has a finite number of heartbeats. I don't intend to waste any of mine."
+date: 2020-01-30 23:45:13 -0400
+background: "/assets/images/posts/05.jpg"
 comments: true
-author: author3
+author: author2
 ---
 
 <p>
@@ -86,9 +85,9 @@ author: author3
   alt="Demo Image"
 />
 <span class="caption text-muted"
-  >To go places and do things that have never been done before – that’s what
-  living is all about.</span
->
+
+> To go places and do things that have never been done before – that’s what
+> living is all about.</span
 
 <p>
   Space, the final frontier. These are the voyages of the Starship Enterprise.

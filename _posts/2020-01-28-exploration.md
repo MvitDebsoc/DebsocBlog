@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "I believe every human has a finite number of heartbeats. I don't intend to waste any of mine."
-date: 2020-01-30 23:45:13 -0400
-background: "/img/posts/05.jpg"
+title: "Failure is not an option"
+subtitle: "Many say exploration is part of our destiny, but it’s actually our duty to future generations."
+date: 2020-01-28 23:45:13 -0400
+background: "/assets/images/posts/03.jpg"
 comments: true
-author: author2
+author: author4
 ---
 
 <p>
@@ -85,9 +86,9 @@ author: author2
   alt="Demo Image"
 />
 <span class="caption text-muted"
-  >To go places and do things that have never been done before – that’s what
-  living is all about.</span
->
+
+> To go places and do things that have never been done before – that’s what
+> living is all about.</span
 
 <p>
   Space, the final frontier. These are the voyages of the Starship Enterprise.

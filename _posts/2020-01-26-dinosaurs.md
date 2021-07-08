@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Man must explore, and this is exploration at its greatest"
-subtitle: "Problems look mighty small from 150 miles up"
-date: 2020-01-31 10:45:13 -0400
-background: "/img/posts/06.jpg"
+title: "Dinosaurs are extinct today"
+subtitle: "because they lacked opposable thumbs and the brainpower to build a space program."
+date: 2020-01-26 23:45:13 -0400
+background: "/assets/images/posts/01.jpg"
 comments: true
-author: author1
+author: author6
 ---
 
 <p>
@@ -86,9 +86,9 @@ author: author1
   alt="Demo Image"
 />
 <span class="caption text-muted"
-  >To go places and do things that have never been done before – that’s what
-  living is all about.</span
->
+
+> To go places and do things that have never been done before – that’s what
+> living is all about.</span
 
 <p>
   Space, the final frontier. These are the voyages of the Starship Enterprise.
