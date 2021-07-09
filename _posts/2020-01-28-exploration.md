@@ -6,6 +6,7 @@ date: 2020-01-28 23:45:13 -0400
 background: "/assets/images/posts/03.jpg"
 comments: true
 author: author4
+categories: Blog
 ---
 
 <p>

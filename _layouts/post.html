@@ -13,7 +13,22 @@ layout: default
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
+
+
           <div class="post-heading">
+
+            <div class="post-categories">
+              {% if post %}
+              {% assign categories = post.categories %}
+              {% else %}
+              {% assign categories = page.categories %}
+              {% endif %}
+              {% for category in categories %}
+              <a href="{{site.baseurl}}/categories/#{{category|slugify}}">{{category}}</a>
+              {% unless forloop.last %}&nbsp;{% endunless %}
+              {% endfor %}
+            </div>
+
             <h1>{{ page.title }}</h1>
             {% if page.subtitle %}
             <h2 class="subheading">{{ page.subtitle }}</h2>
@@ -30,7 +45,7 @@ layout: default
     </div>
   </header>
 
-
+  
 
   <div class="container">
     <div class="row">
@@ -39,39 +54,26 @@ layout: default
         {% if page.author %}
         {% assign author = site.authors[page.author] %}
         <div class="col align-middle">
-          <class class="card my-3" style="max-width: 700px" >
+          <class class="card my-3" style="max-width: 700px">
             <div class="row g-0">
-                <div class="col-md-6 mb-md-0">
-                    <img
-                    class="img-fluid rounded-start"
-                      alt="{{ author.name }}"
-                      src="{{ site.baseurl }}/{{author.avatar}}"
-                      
-                    />
-                  </div>
+              <div class="col-md-6 mb-md-0">
+                <img class="img-fluid rounded-start" alt="{{ author.name }}"
+                  src="{{ site.baseurl }}/{{author.avatar}}" />
+              </div>
               <div class="col-md-6">
                 <div class="card-body">
                   <h3 class="card-title">{{ author.name }}</h3>
                   <p class="card-text">{{ author.description }}</p>
                   <div class="icon-block mt-3 d-flex">
                     <div>
-                      <a target="_blank" href="{{ author.twitter }}"
-                        ><i class="fab fa-twitter text-muted" aria-hidden="true"></i
-                      ></a>
+                      <a target="_blank" href="{{ author.twitter }}"><i class="fab fa-twitter text-muted"
+                          aria-hidden="true"></i></a>
                       &nbsp;
-                      <a target="_blank" href="{{ author.instagram }}"
-                        ><i
-                          class="fab fa-instagram-square text-muted"
-                          aria-hidden="true"
-                        ></i
-                      ></a>
+                      <a target="_blank" href="{{ author.instagram }}"><i class="fab fa-instagram-square text-muted"
+                          aria-hidden="true"></i></a>
                       &nbsp;
-                      <a target="_blank" href="{{ author.facebook }}"
-                        ><i
-                          class="fab fa-facebook-square text-muted"
-                          aria-hidden="true"
-                        ></i
-                      ></a>
+                      <a target="_blank" href="{{ author.facebook }}"><i class="fab fa-facebook-square text-muted"
+                          aria-hidden="true"></i></a>
                       &nbsp;
                     </div>
                   </div>
@@ -81,7 +83,7 @@ layout: default
           </class>
         </div>
         {% endif %}
-        
+
 
         <hr />
 
@@ -132,4 +134,3 @@ layout: default
   </div>
 
 </header>
-
