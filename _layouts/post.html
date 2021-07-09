@@ -4,10 +4,8 @@ layout: default
 
 <!-- Page Header -->
 {% if page.background %}
-<header
-  class="masthead"
-  style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')"
->
+<header class="masthead"
+  style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
   {% else %}
   <header class="masthead">
     {% endif %}
@@ -15,17 +13,29 @@ layout: default
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
+
+
           <div class="post-heading">
+
+            <div class="post-categories">
+              {% if post %}
+              {% assign categories = post.categories %}
+              {% else %}
+              {% assign categories = page.categories %}
+              {% endif %}
+              {% for category in categories %}
+              <a href="{{site.baseurl}}/categories/#{{category|slugify}}" class="bg-warning p-1 font-weight-bold rounded">{{category}}</a>
+              {% unless forloop.last %}&nbsp;{% endunless %}
+              {% endfor %}
+            </div>
+
             <h1>{{ page.title }}</h1>
             {% if page.subtitle %}
             <h2 class="subheading">{{ page.subtitle }}</h2>
             {% endif %}
-            <span class="meta"
-              >Posted by
-              <a href="{{ "/authors" | relative_url }}"
-                >{% if page.author %}{{ page.author }}{% else %}{{ site.author
-                }}{% endif %}</a
-              >
+            <span class="meta">Posted by
+              <a href="{{ " /authors" | relative_url }}">{% if page.author %}{{ page.author }}{% else %}{{ site.author
+                }}{% endif %}</a>
               on {{ page.date | date: '%B %d, %Y' }} &middot; {% include
               read_time.html content=page.content %}
             </span>
@@ -35,6 +45,8 @@ layout: default
     </div>
   </header>
 
+
+
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
@@ -42,39 +54,26 @@ layout: default
         {% if page.author %}
         {% assign author = site.authors[page.author] %}
         <div class="col align-middle">
-          <class class="card my-3" style="max-width: 700px" >
+          <class class="card my-3" style="max-width: 700px">
             <div class="row g-0">
-                <div class="col-md-6 mb-md-0">
-                    <img
-                    class="img-fluid rounded-start"
-                      alt="{{ author.name }}"
-                      src="{{ site.baseurl }}/{{author.avatar}}"
-                      
-                    />
-                  </div>
+              <div class="col-md-6 mb-md-0">
+                <img class="img-fluid rounded-start" alt="{{ author.name }}"
+                  src="{{ site.baseurl }}/{{author.avatar}}" />
+              </div>
               <div class="col-md-6">
                 <div class="card-body">
                   <h3 class="card-title">{{ author.name }}</h3>
                   <p class="card-text">{{ author.description }}</p>
                   <div class="icon-block mt-3 d-flex">
                     <div>
-                      <a target="_blank" href="{{ author.twitter }}"
-                        ><i class="fab fa-twitter text-muted" aria-hidden="true"></i
-                      ></a>
+                      <a target="_blank" href="{{ author.twitter }}"><i class="fab fa-twitter text-muted"
+                          aria-hidden="true"></i></a>
                       &nbsp;
-                      <a target="_blank" href="{{ author.instagram }}"
-                        ><i
-                          class="fab fa-instagram-square text-muted"
-                          aria-hidden="true"
-                        ></i
-                      ></a>
+                      <a target="_blank" href="{{ author.instagram }}"><i class="fab fa-instagram-square text-muted"
+                          aria-hidden="true"></i></a>
                       &nbsp;
-                      <a target="_blank" href="{{ author.facebook }}"
-                        ><i
-                          class="fab fa-facebook-square text-muted"
-                          aria-hidden="true"
-                        ></i
-                      ></a>
+                      <a target="_blank" href="{{ author.facebook }}"><i class="fab fa-facebook-square text-muted"
+                          aria-hidden="true"></i></a>
                       &nbsp;
                     </div>
                   </div>
@@ -84,9 +83,13 @@ layout: default
           </class>
         </div>
         {% endif %}
-        
+
 
         <hr />
+
+
+
+
         {% if page.comments %}
         <div id="disqus_thread"></div>
         <script>
@@ -108,38 +111,26 @@ layout: default
             (d.head || d.body).appendChild(s);
           })();
         </script>
-        <noscript
-          >Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript"
-            >comments powered by Disqus.</a
-          ></noscript
-        >
+        <noscript>Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         {% endif %}
 
         <hr />
 
         <div class="clearfix">
           {% if page.previous.url %}
-          <a
-            class="btn btn-primary float-left"
-            href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}"
-            data-toggle="tooltip"
-            data-placement="top"
-            title="{{ page.previous.title }}"
-            >&larr; Previous<span class="d-none d-md-inline"> Post</span></a
-          >
+          <a class="btn btn-primary float-left"
+            href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip"
+            data-placement="top" title="{{ page.previous.title }}">&larr; Previous<span class="d-none d-md-inline">
+              Post</span></a>
           {% endif %} {% if page.next.url %}
-          <a
-            class="btn btn-primary float-right"
-            href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}"
-            data-toggle="tooltip"
-            data-placement="top"
-            title="{{ page.next.title }}"
-            >Next<span class="d-none d-md-inline"> Post</span> &rarr;</a
-          >
+          <a class="btn btn-primary float-right" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}"
+            data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next<span
+              class="d-none d-md-inline"> Post</span> &rarr;</a>
           {% endif %}
         </div>
       </div>
     </div>
   </div>
+
 </header>

@@ -6,6 +6,7 @@ date: 2020-01-31 10:45:13 -0400
 background: "/assets/images/posts/06.jpg"
 comments: true
 author: author1
+categories: Motivational
 ---
 
 <p>
