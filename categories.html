@@ -16,7 +16,7 @@ background: "/assets/images/bg-post.jpg"
     <a name="{{ category_name | slugify }}"></a>
     {% for post in site.categories[category_name] %}
     <article class="archive-item">
-      <h4><a href="{{ site.baseurl }}{{ post.url }}" class="py-2">{{post.title}}</a></h4>
+      <h4 class="border p-1"><a href="{{ site.baseurl }}{{ post.url }}" class="py-2">{{post.title}}</a></h4>
     </article>
     {% endfor %}
   </div>
