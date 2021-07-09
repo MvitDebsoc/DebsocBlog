@@ -5,6 +5,7 @@ date: 2020-01-30 23:45:13 -0400
 background: "/assets/images/posts/05.jpg"
 comments: true
 author: author2
+categories: Personal
 ---
 
 <p>
