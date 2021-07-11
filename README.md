@@ -22,6 +22,8 @@ The Soc focuses on **Parliamentary Debating** style : Asian Parliament and Briti
 3.  Create a branch off of master and give it a meaningful name (e.g. my-new-feature).
 4.  Make necessary changes, commit, push and open a pull request on GitHub.
 
+To know more about how to contribute refer to : [CONTRIBUTE.md](https://github.com/MvitDebsoc/DebsocBlog/blob/5f97fd46af8cb6a6a7c0fd81191e55c097d1e3a7/CONTRIBUTING.md)
+
 * * * 
  <a href="https://www.instagram.com/smvitdebsoc/">![alt text](https://img.shields.io/badge/-Instagram-833AB4?style=plastic&logo=Instagram)</a>  
  Check out our Instagram handle for informative posts, quizzes, fun interactions, announcements and a lot more! 
