@@ -6,19 +6,39 @@ background: "/assets/images/bg-post.jpg"
 
 
 <div id="archives">
-{% for category in site.categories %}
+  {% for category in site.categories %}
   <div class="archive-group">
     {% capture category_name %}{{ category | first }}{% endcapture %}
     <div id="{{ category_name | slugify }}"></div>
     <p></p>
-    <h3 class="category-head bg-secondary p-2">{{ category_name }}</h3>
+    <h2 class="category-head bg-dark text-light p-2 text-center">{{ category_name }}</h2>
     <a name="{{ category_name | slugify }}"></a>
+    <p></p>
+
     {% for post in site.categories[category_name] %}
     <article class="archive-item">
-      <h4 class="border p-1"><a href="{{ site.baseurl }}/{{ post.url }}" class="py-2">{{post.title}}</a></h4>
+      <a href="{{ site.baseurl }}/{{ post.url }}" class="text-decoration-none">
+        <h2 class="post-title">{{post.title}}</h2>
+
+        {% if post.subtitle %}
+        <h3 class="post-subtitle font-weight-light">{{ post.subtitle }}</h3>
+        {% else %}
+        <h3 class="post-subtitle font-weight-light">
+          {{ post.excerpt | strip_html | truncatewords: 15 }}
+        </h3>
+        {% endif %}
+      </a>
+
+      <p class="post-meta my-0">
+        Posted by {% if post.author %} {{ post.author }} {% else %} {{ site.author
+        }} {% endif %} on {{ post.date | date: '%B %d, %Y' }} &middot; {% include
+        read_time.html content=post.content %}
+      </p>
+
     </article>
+
+    <hr />
     {% endfor %}
   </div>
-{% endfor %}
+  {% endfor %}
 </div>
-
