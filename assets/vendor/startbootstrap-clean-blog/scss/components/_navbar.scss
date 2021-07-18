@@ -2,7 +2,7 @@
 #mainNav {
     position: absolute;
     border-bottom: 1px solid $gray-200;
-    background-color: rgba(223, 119, 0, 0.39);
+    background-color: $white;
     font-family: $headings-font-family;
 
     .navbar-brand {
@@ -51,7 +51,7 @@
 
                     &:focus,
                     &:hover {
-                        color: fade-out($white, .2);
+                        color: fade-out(rgb(223, 119, 0), .2);
                     }
                 }
             }
