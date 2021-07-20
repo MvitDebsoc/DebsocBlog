@@ -9,6 +9,8 @@ author: author1
 categories: Motivational
 ---
 
+**This is sample blog**
+
 <p>
   Never in all their history have men been able truly to conceive of the world
   as one: a single sphere, a globe, having the qualities of a globe, a round

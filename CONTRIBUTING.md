@@ -49,6 +49,7 @@ There are many  sectors in which you can contribute to this project :
        * You can easily write your blog by adding the contents uder the _posts category.Make sure you write the content in the markdown format and save the file in filename.md
        form. '.md' refers to Markdown one can easily learn [Markdown](https://www.markdowntutorial.com/), it helps the author to write thhe content with ease and make the blog look decent. 
        * Change the file in name to today's date and the title of the post. Jekyll needs the file to be named year-month-day-title.md format. Update the title at the top of the Markdown file.
+       * You can check the sample blogs and add headers from there.The sample blogs are in _drafts folder.
    2. **Using _Local Editor_**
        * You can use any editor of your choice but the most common editor used is [VScode Editor](https://code.visualstudio.com/download).Then add yout post under the _post category and name the file in year-month-day-title.md format.
        * Commit your post's markdown fike and push to your GITHUB repository. The steps to commit and pushing the file is included in above shared links.
