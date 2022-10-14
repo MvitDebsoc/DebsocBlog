@@ -9,7 +9,7 @@ There are many  sectors in which you can contribute to this project :
 
 ---
 
-## Points to remember:
+## Basic Approaches and points to remember:
 ### 1. Local Setup:
     
    For setting up locally Fork the repositry and clone it using the commands given below in the terminal.
